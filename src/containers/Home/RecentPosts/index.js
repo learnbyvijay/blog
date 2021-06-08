@@ -75,24 +75,21 @@ const RecentPosts = (props) => {
      {
         posts.map(post => {
             return (
-            <Card style={{marginBottom: '20px',padding:'10px'}}>
+            <Card style={{marginBottom: '20px'}}>
               
 
-                <div style={{textAlign: 'center'}}>
+                <div style={{textAlign: 'center',padding:'10px'}}>
 
                     <span>Featured</span>
                     <h2>{post.blogTitle}</h2>
-                    <span>posted on {post.postedOn} by {post.author}</span>
-                   
-
-                    
+                    <span>posted on {post.postedOn} by {post.author}</span>    
 
                 </div>
-            <NavLink key={post.id} to={`/post/${post.slug}`}>
-                  <div className="postImageWrapper">
-                    <img src={'/blogPostImages/'+post.blogImage} alt=""/>
-                </div><br/>
-            </NavLink>
+                     <NavLink key={post.id} to={`/post/${post.slug}`}>
+                             <div className="postImageWrapper">
+                             <img src={require("../../../blogPostImages/"+post.blogImage).default} alt=""/>
+                              </div><br/>
+                     </NavLink>
  
 
 

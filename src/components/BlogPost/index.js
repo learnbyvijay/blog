@@ -91,7 +91,7 @@ const BlogPost = (props) => {
   <span className="postedBy">posted on {post.postedOn} by {post.author}</span>
                 </div>
                 <div className="postImageContainer">
-                    <img src={"/blogPostImages/"+post.blogImage} alt="Post Image" />
+                    <img src={require("../../blogPostImages/"+post.blogImage).default} alt="Post Image" />
                     
                 </div>
 

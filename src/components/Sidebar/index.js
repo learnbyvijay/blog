@@ -82,7 +82,7 @@ const Sidebar = (props) => {
                     <span>About Us</span>
                 </div>
                 <div className="profileImageContainer">
-                    <img src="../../profile.jpg" alt="" />
+                    <img src={require("../../profile.jpg").default} alt="" />
                 </div>
                 <div className="cardBody">
                     <p className="personalBio">My name is vijaykasundra I am a software developer specialization in Front end developement....:)</p>

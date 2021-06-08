@@ -70,7 +70,7 @@ const ImageGallary = props => (
         <div className="gallaryPost" style={props.gallaryStyle}>
                 <section style={{ width: props.largeWidth }}>
                     <div className="mainImageWrapper">
-                        <img src={"/blogPostImages/"+props.imagesArray[1]} alt="" />
+                        <img src={require("../../blogPostImages/"+props.imagesArray[1]).default} alt="" />
                     </div>
                 </section>
                 <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
@@ -78,7 +78,7 @@ const ImageGallary = props => (
                         props.imagesArray.map(image => 
                             <SideImage 
                                 height={props.sideImageHeight}
-                                src={'/blogPostImages/' + image}
+                                src={require("../../blogPostImages/"+image).default}
                                 alt="" />
                         )
                     }
