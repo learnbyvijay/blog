@@ -90,7 +90,7 @@ const RecentPosts = (props) => {
                 </div>
             <NavLink key={post.id} to={`/post/${post.slug}`}>
                   <div className="postImageWrapper">
-                    <img src={'./blogPostImages/'+post.blogImage} alt=""/>
+                    <img src={'/blogPostImages/'+post.blogImage} alt=""/>
                 </div><br/>
             </NavLink>
  
